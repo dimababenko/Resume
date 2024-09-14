@@ -16,7 +16,9 @@
     --mainBgColor:#131415;
 }
 
-
+[data-theme="light"]{
+    --mainBorderColor: #333;
+}
 
 *{
     font-family: 'Readex Pro';
@@ -42,7 +44,7 @@ a{
 }
 
 li{
-    line-height: 1.9em;
+    line-height: 1.7em;
 }
 
 #container--main{
@@ -93,6 +95,7 @@ li{
 #socials--list{
     display: flex;
     justify-content: space-between;
+    /* justify-content: space-evenly; */
     column-gap: 1em;
     flex-wrap: wrap;
 }
@@ -121,12 +124,12 @@ li{
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
-    font-size: 0.9em;
+    /* font-size: 0.9em; */
 }
 
 .card--techstack{
     border: 1px solid var(--mainBorderColor);
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 0.5em 1em;
     align-items: center;
 }
@@ -156,7 +159,7 @@ li{
 }
 
 .card--work-history{
-    border-left: 1px solid var(--mainBorderColor);
+    border-left: 2px solid var(--mainBorderColor);
     margin-top: 3em;
     margin-bottom: 3em;
     padding-left: 2em;
@@ -164,7 +167,7 @@ li{
 
 .line-break{
     background-color: var(--mainBorderColor);
-    height: 1px;
+    height: 2px;
 }
 
 #profile-pic {
@@ -186,9 +189,9 @@ li{
 @media(max-width:600px){
 
     .section--page{
-        padding-top: 1em;
-        padding-bottom: 1em;
-        margin-top: 3em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        margin-top: 1.5em;
     }
 
     #wrapper--hero{
@@ -209,5 +212,18 @@ li{
     .card--work-history{
         border-left: none;
         padding-left: 0;
+    }
+
+    #qualifications--list{
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        list-style: none;
+        border-left: none;
+        padding-left: 0;
+    }
+
+    #socials--list{
+        columns: 2;
     }
 }

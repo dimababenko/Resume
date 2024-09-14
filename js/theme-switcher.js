@@ -14,6 +14,8 @@ function getThemeOnLoad() {
 
     if (theme) {
         document.querySelector("body").setAttribute("data-theme", theme);
+    } else {
+        document.querySelector("body").setAttribute("data-theme", "dark");
     }
 }
 
