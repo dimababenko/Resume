@@ -94,8 +94,7 @@ li{
 
 #socials--list{
     display: flex;
-    justify-content: space-between;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
     column-gap: 1em;
     flex-wrap: wrap;
 }
@@ -186,6 +185,14 @@ li{
   } */
 
 
+body[data-theme="dark"] #resume-link-light {
+    display: none;
+}
+
+body[data-theme="light"] #resume-link-dark {
+    display: none;
+}
+
 @media(max-width:600px){
 
     .section--page{
@@ -225,5 +232,11 @@ li{
 
     #socials--list{
         columns: 2;
+    }
+}
+
+@media print {
+    .no-print {
+        display: none !important;
     }
 }
