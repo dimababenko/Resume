@@ -78,10 +78,11 @@ li{
 }
 
 #profile-pic{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: auto;
     object-fit: cover;
     border-radius: 50%;
+    border: solid 1px;
 }
 
 #email{
@@ -169,21 +170,10 @@ li{
     height: 2px;
 }
 
-#profile-pic {
-    width: 200px;
-    height: auto;
-    border: solid 1px;
+h2 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
-
-
-
-/* 
-.h2 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  } */
-
 
 body[data-theme="dark"] #resume-link-light {
     display: none;
@@ -198,7 +188,7 @@ body[data-theme="light"] #resume-link-dark {
     .section--page{
         padding-top: 0.5em;
         padding-bottom: 0.5em;
-        margin-top: 1.5em;
+        margin-top: 1em;
     }
 
     #wrapper--hero{
@@ -238,5 +228,10 @@ body[data-theme="light"] #resume-link-dark {
 @media print {
     .no-print {
         display: none !important;
+    }
+
+    .section--page{
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
     }
 }
