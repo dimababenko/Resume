@@ -18,6 +18,7 @@
 
 [data-theme="light"]{
     --mainBorderColor: #333;
+    --mainLinkColor:rgb(12, 195, 241);
 }
 
 *{
@@ -53,8 +54,8 @@ li{
 }
 
 .section--page{
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
 }
 
 #wrapper--hero{
@@ -77,7 +78,7 @@ li{
 }
 
 #user-name{
-    font-size: 48px;
+    font-size: 2em;
     line-height: 1em;
     margin-bottom: 1em;
     margin-top: 0;
@@ -91,14 +92,6 @@ li{
     border: solid 1px;
 }
 
-#email{
-    color: var(--mainTextColor);
-}
-
-#number {
-    color: var(--mainTextColor);
-}
-
 #socials--list{
     display: flex;
     justify-content: space-evenly;
@@ -109,17 +102,17 @@ li{
 #socials--list a{
     font-weight: 300;
     color: var(--secondaryTextColor);
-    font-size: 0.9em;
+    font-size: 1em;
     transition: 0.3s;
 }
 
 #socials--list a:hover{
     font-weight: 100;
     color: var(--mainLinkColor);
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
-#qualifications--list{
+#qualifications--list, #techstack--list{
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
@@ -131,12 +124,13 @@ li{
     flex-wrap: wrap;
     gap: 1em;
     /* font-size: 0.9em; */
+    font-size: 1em;
 }
 
 .card--techstack{
     border: 1px solid var(--mainBorderColor);
     border-radius: 3px;
-    padding: 0.5em 1em;
+    padding: 0.5em 0.5em;
     align-items: center;
 }
 
@@ -166,9 +160,9 @@ li{
 
 .card--work-history{
     border-left: 2px solid var(--mainBorderColor);
-    margin-top: 3em;
-    margin-bottom: 3em;
-    padding-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 1em;
 }
 
 .line-break{
@@ -179,6 +173,7 @@ li{
 h2 {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+    font-size: 1.3em;
 }
 
 body[data-theme="dark"] #resume-link-light {
@@ -190,13 +185,6 @@ body[data-theme="light"] #resume-link-dark {
 }
 
 @media(max-width:600px){
-
-    .section--page{
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
-        margin-top: 1em;
-    }
-
     #wrapper--hero{
         display: flex;
         align-items: center;
@@ -217,7 +205,7 @@ body[data-theme="light"] #resume-link-dark {
         padding-left: 0;
     }
 
-    #qualifications--list{
+    #qualifications--list, #techstack--list{
         columns: 1;
         -webkit-columns: 1;
         -moz-columns: 1;
@@ -234,10 +222,5 @@ body[data-theme="light"] #resume-link-dark {
 @media print {
     .no-print {
         display: none !important;
-    }
-
-    .section--page{
-        padding-top: 0.3em;
-        padding-bottom: 0.3em;
     }
 }
